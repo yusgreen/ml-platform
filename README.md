@@ -74,6 +74,28 @@ UI: http://localhost:3000
 
 ---
 
+## 💻 Ejecución en otra PC (clonado del repositorio)
+
+```bash
+# 1. Clonar el repo
+git clone https://github.com/yusgreen/ml-platform.git
+cd ml-platform
+
+# 2. Backend
+cd backend
+python -m pip install -r requirements.txt
+cp .env.example .env   # setear GROQ_API_KEY si quieres chat
+python run.py
+
+# 3. Frontend (en otra terminal)
+cd ..
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
 ## 🔌 Endpoints principales
 
 | Método | Ruta | Descripción |
